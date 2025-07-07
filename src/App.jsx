@@ -4,23 +4,30 @@ import Navbar from './components/Navbar';
 import Footer from './components/Footer';
 import Home from './pages/Home';
 import Services from './pages/Services';
-import About from './pages/About';
 import Gallery from './pages/Gallery';
 import Testimonials from './pages/Testimonials';
 import Contact from './pages/Contact';
+import BookingForm from './components/BookingForm';
+import Login from './pages/Login';
+import Signup from './pages/Signup';
+import { AuthProvider } from './components/AuthProvider';
+import ProtectedRoute from './components/ProtectedRoute';
 
 function App() {
   return (
-    <div className="flex flex-col min-h-screen">
+    <div className="font-body flex flex-col min-h-screen">
       <Navbar />
-      <main className="flex-grow">
+      <main className="flex-grow pt-20">
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/services" element={<Services />} />
-          <Route path="/about" element={<About />} />
           <Route path="/gallery" element={<Gallery />} />
           <Route path="/testimonials" element={<Testimonials />} />
+          <Route path="/about" element={<Contact />} />
           <Route path="/contact" element={<Contact />} />
+          <Route path="/login" element={<Login />} />
+          <Route path="/signup" element={<Signup />} />
+          <Route path="/booking" element={<ProtectedRoute><BookingForm /></ProtectedRoute>} />
         </Routes>
       </main>
       <Footer />

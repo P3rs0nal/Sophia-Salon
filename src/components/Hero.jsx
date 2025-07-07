@@ -2,9 +2,14 @@ import React from 'react';
 
 export default function Hero() {
   return (
-    <section className="h-96 bg-cover bg-center" style={{ backgroundImage: "url('/hero.jpg')" }}>
-      <div className="h-full flex items-center justify-center bg-black bg-opacity-50">
-        <h1 className="text-4xl text-white font-bold">Welcome to Sophia's Salon</h1>
+    <section 
+      className="relative h-[80vh] bg-cover bg-center" 
+      style={{ backgroundImage: "url('/hero.jpg')" }}
+    >
+      <div className="absolute inset-0 bg-black/50 flex items-center justify-center">
+        <h1 className="text-5xl sm:text-6xl font-heading text-white text-center px-4">
+          Lettuce
+        </h1>
       </div>
     </section>
   );
