@@ -40,7 +40,7 @@ export default function BookingForm() {
   }
 
   return (
-    <form onSubmit={handleSubmit} className="max-w-md mx-auto p-6 bg-brand2 rounded-lg shadow">
+    <form onSubmit={handleSubmit} className="max-w-md mx-auto p-6 bg-surface rounded-lg shadow">
       <h2 className="text-2xl font-heading mb-6 text-center">Book an Appointment</h2>
 
       <label className="block mb-2">Service</label>

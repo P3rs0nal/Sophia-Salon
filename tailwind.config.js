@@ -3,16 +3,18 @@ module.exports = {
   "./public/index.html"],
   theme: { extend: {
     colors: {
-      brand1: "#D6D2D2",   // light gray
-        brand2: "#F1E4F3",   // off-white lavender
-        brand3: "#F4BBD3",   // pale pink
-        brand4: "#F686BD",   // medium rose
-        brand5: "#FE5D9F",   // bold magenta
+        strawberry: "#EFC1CA",   // Primary pink
+        matcha:     "#A1C181",   // Accent green
+        bg:         "#FFFFFF",   // Page background
+        surface:    "#F4F4F4",   // Card & section backgrounds
+        text:       "#333333",   // Primary text
     },
     fontFamily: {
       heading: ['"Playfair Display"', 'serif'],  // Elegant for titles
       body: ['"Open Sans"', 'sans-serif'],       // Clean for text
+      cursive: ['Allura', 'cursive']
     }
   } },
-  plugins: []
+  plugins: [],
+  
 };

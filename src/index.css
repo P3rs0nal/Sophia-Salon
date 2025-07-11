@@ -1,23 +1,23 @@
+/* src/index.css */
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
-/* Global */
 html { font-size: 16px; }
-body { @apply font-body text-brand5 bg-brand2; }
+body { @apply font-body text-text bg-bg; }
 
-/* Buttons */
+/* Primary button (formerly .btn-primary) */
 .btn-primary {
-  @apply bg-brand4 text-white font-semibold py-2 px-6 rounded-2xl shadow-lg 
-         hover:bg-brand5 transition;
+  @apply bg-strawberry hover:bg-matcha text-white font-semibold py-2 px-6 rounded-2xl shadow-lg transition;
 }
 
-/* Navbar link hover */
+/* Navbar links */
 .nav-link {
-  @apply text-brand5 hover:text-brand4 transition;
+  @apply text-strawberry hover:text-matcha transition;
 }
 
 /* Section divider */
 .section-divider {
-  @apply my-16 border-t border-brand1;
+  @apply my-16 border-t border-strawberry;
 }
