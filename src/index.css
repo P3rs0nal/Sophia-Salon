@@ -21,3 +21,13 @@ body { @apply font-body text-text bg-bg; }
 .section-divider {
   @apply my-16 border-t border-strawberry;
 }
+
+.padding {
+  margin: 20px;
+  padding: 15px;
+}
+
+.stack {
+  display: flex;
+  flex-direction: column;
+}

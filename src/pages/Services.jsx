@@ -14,7 +14,7 @@ export default function Services() {
         {services.map(s => (
           <div 
             key={s.id} 
-            className="p-6 bg-white rounded-lg shadow hover:shadow-lg transition"
+            className="p-6 bg-matcha rounded-lg shadow hover:shadow-lg transition"
           >
             <h3 className="text-2xl font-heading mb-2">{s.name}</h3>
             <p className="mb-4">{s.description}</p>

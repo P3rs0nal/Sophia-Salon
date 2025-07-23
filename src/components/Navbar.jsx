@@ -44,7 +44,6 @@ export default function Navbar() {
         <div className="hidden sm:flex items-center space-x-2">
           <Link to="/services" className={commonClass}>Services</Link>
           <Link to="/gallery" className={commonClass}>Gallery</Link>
-          <Link to="/testimonials" className={commonClass}>Testimonials</Link>
           <Link to="/about" className={commonClass}>About</Link>
           <Link to="/contact" className={commonClass}>Contact</Link>
           <button onClick={goBooking} className={commonClass}>Book Now</button>
@@ -70,7 +69,7 @@ export default function Navbar() {
       {/* mobile menu */}
       {open && (
         <div className="sm:hidden bg-bg shadow-inner">
-          {['services','gallery','testimonials','about','contact'].map(p => (
+          {['services','gallery','about','contact'].map(p => (
             <Link
               key={p}
               to={`/${p}`}
